@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    /* padding: 0; */
+    background: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.react {
+    width: 15em;
+    height: 15em;
+    position: relative;
+    animation: rotate 5s linear infinite;
+}
+
+.react .ring,
+.react .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.react .ring {
+    border: 12px #51d4f4 solid;
+    width: 5em;
+    height: 100%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.react .ring:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.react .ring:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.react .center {
+    background: #51d4f4;
+    width: 3em;
+    height: 3em;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(180deg);
+    }
+
+}

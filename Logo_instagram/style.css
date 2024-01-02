@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+.instagram {
+    height: 25em;
+    width: 25em;
+    border-radius: 6em;
+    background: linear-gradient(45deg,
+            #ffdc7d 0%,
+            #f46f30 27%,
+            #c32aa3 58%,
+            #5c58c9 98%);
+    position: relative;
+}
+
+.camera {
+    border: 1.8em #fff solid;
+    width: 61%;
+    height: 61%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5.5em;
+}
+
+.camera::before,
+.camera::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.camera::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1.5em #fff solid;
+    width: 40%;
+    height: 40%;
+}
+
+.camera::after {
+    top: 12%;
+    right: 12%;
+    background: #fff;
+    width: 2em;
+    height: 2em;
+}

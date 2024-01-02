@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Christmas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#" style="--clr:#0f0;"><span>Button</span></a>
+    <a href="#" style="--clr:#ff0;"><span>Button</span></a>
+    <a href="#" style="--clr:#f0f;"><span>Button</span></a>
+</body>
+<script>
+    let btns = document.querySelectorAll('a');
+    btns.forEach(btn => {
+        btn.onmousemove = function (e) {
+            let x = e.pageX - btn.offsetLeft;
+            let y = e.pageY - btn.offsetTop;
+            btn.style.setProperty('--x', x + 'px')
+            btn.style.setProperty('--y', y + 'px')
+
+        }
+    })
+</script>
+
+</html>

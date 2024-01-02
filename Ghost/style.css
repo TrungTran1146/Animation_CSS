@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 100px;
+    position: relative;
+}
+
+.ghost {
+    position: absolute;
+    top: 50px;
+    left: 100%;
+    mix-blend-mode: exclusion;
+    animation: ghost 4.5s ease-in-out infinite;
+    transform: rotate(-90deg);
+}
+
+@keyframes ghost {
+    to {
+        left: -100px;
+    }
+}

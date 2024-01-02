@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: inline-block;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    outline-color: yellow;
+    outline: 5px solid;
+    /* outline: none; */
+    text
+}

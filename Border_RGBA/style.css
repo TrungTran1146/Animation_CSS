@@ -1,0 +1,27 @@
+body,
+html {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+}
+
+.border {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border: 10px solid;
+    border-image: linear-gradient(45deg, gold, deeppink)1;
+    clip-path: inset(0px round 10px);
+    animation: animation 6s infinite linear;
+    filter: hue-rotate(360deg);
+}
+
+@keyframes animation {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

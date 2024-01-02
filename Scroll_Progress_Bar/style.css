@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+img {
+    width: 100px;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(233, 100, 100);
+    height: 10px;
+    width: 100%;
+}
+
+.value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    width: 30%;
+}

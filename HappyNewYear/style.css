@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Pacifico');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Pacifico");
 
-*, *:after, *:before{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   -webkit-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
 }
-html{
-	background: #222048;
+html {
+  background: #222048;
 }
-.feliz{
+.feliz {
   width: 100%;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-size: 100px;
   font-weight: 700;
   color: #f48fb1;
@@ -22,7 +24,7 @@ html{
   opacity: 0;
   animation: vem_feliz 2s ease-in-out 7s forwards;
 }
-.ano_novo{
+.ano_novo {
   position: absolute;
   top: 0;
   left: 0;
@@ -35,27 +37,27 @@ html{
   overflow: hidden;
   padding: 200px 100px 0px 0px;
 }
-.ano_novo>span{
-  font-family: 'Montserrat', sans-serif;
+.ano_novo > span {
+  font-family: "Montserrat", sans-serif;
   font-size: 175px;
   font-weight: 700;
   color: #7a8fe8;
 }
-span.seis{
+span.seis {
   position: absolute;
   top: 50%;
   right: 50%;
   margin-right: -200px;
   animation: vai_2016 5s ease-in-out 5s forwards;
 }
-span.sete{
+span.sete {
   position: absolute;
   right: 0%;
   margin-right: -200px;
   animation: vem_2017 6s ease-in-out forwards;
 }
-span.sete:before{
-  content: '';
+span.sete:before {
+  content: "";
   width: 0px;
   height: 6px;
   display: block;
@@ -69,7 +71,7 @@ span.sete:before{
   z-index: -1;
   animation: entrega_balao 1s ease-in-out 4s;
 }
-.balao{
+.balao {
   width: 100px;
   height: 100px;
   display: block;
@@ -82,8 +84,8 @@ span.sete:before{
   margin-right: -200px;
   animation: vem_e_vai_balao 10s ease-in-out forwards;
 }
-.balao:before{
-  content: '';
+.balao:before {
+  content: "";
   width: 0;
   height: 0;
   border-style: solid;
@@ -95,8 +97,8 @@ span.sete:before{
   bottom: -10px;
   z-index: -1;
 }
-.balao:after{
-  content: '';
+.balao:after {
+  content: "";
   width: 4px;
   height: 100px;
   display: block;
@@ -107,7 +109,7 @@ span.sete:before{
   margin-left: -2px;
   bottom: -110px;
 }
-.fogos{
+.fogos {
   width: 100%;
   height: 100%;
   display: block;
@@ -116,29 +118,29 @@ span.sete:before{
   left: 0;
   overflow: hidden;
 }
-.fogos>div{
+.fogos > div {
   border: 2px solid #fff;
   position: absolute;
   opacity: 0;
   animation: solta_fogos 1.5s ease-in-out 8s forwards;
 }
-.fogos>div.f1{
+.fogos > div.f1 {
   left: 20%;
   top: 40%;
 }
-.fogos>div.f2{
+.fogos > div.f2 {
   left: 15%;
   top: 70%;
 }
-.fogos>div.f3{
+.fogos > div.f3 {
   right: 20%;
   top: 40%;
 }
-.fogos>div.f4{
+.fogos > div.f4 {
   right: 15%;
   top: 70%;
 }
-.fogos>div span{
+.fogos > div span {
   width: 6px;
   height: 6px;
   display: block;
@@ -148,17 +150,17 @@ span.sete:before{
   opacity: 0;
   animation: estoura_fogos 0.5s ease-in-out 9s forwards;
 }
-.fogos>div span:nth-child(1){
+.fogos > div span:nth-child(1) {
   transform: rotate(0deg);
 }
-.fogos>div span:nth-child(2){
+.fogos > div span:nth-child(2) {
   transform: rotate(120deg);
 }
-.fogos>div span:nth-child(3){
+.fogos > div span:nth-child(3) {
   transform: rotate(240deg);
 }
-.fogos>div span:before{
-  content: '';
+.fogos > div span:before {
+  content: "";
   width: 2px;
   height: 50px;
   display: block;
@@ -167,8 +169,8 @@ span.sete:before{
   top: -60px;
   left: 2px;
 }
-.fogos>div span:after{
-  content: '';
+.fogos > div span:after {
+  content: "";
   width: 2px;
   height: 50px;
   display: block;
@@ -177,8 +179,8 @@ span.sete:before{
   bottom: -60px;
   left: 2px;
 }
-.fogos>div span i:before{
-  content: '';
+.fogos > div span i:before {
+  content: "";
   width: 3px;
   height: 3px;
   display: block;
@@ -188,8 +190,8 @@ span.sete:before{
   top: -15px;
   left: 10px;
 }
-.fogos>div span i:after{
-  content: '';
+.fogos > div span i:after {
+  content: "";
   width: 3px;
   height: 3px;
   display: block;
@@ -199,7 +201,7 @@ span.sete:before{
   top: -15px;
   right: 10px;
 }
-a.author{
+a.author {
   font-size: 12px;
   text-decoration: none;
   color: #f47c7c;
@@ -266,7 +268,7 @@ a.author{
     opacity: 0;
   }
   100% {
-    margin-top: -200px;;
+    margin-top: -200px;
     opacity: 1;
   }
 }
@@ -287,7 +289,7 @@ a.author{
     display: block;
     border-radius: 50%;
   }
-  80%{
+  80% {
     margin-top: 0px;
     margin-left: 0px;
     opacity: 1;
@@ -297,7 +299,7 @@ a.author{
     border-radius: 50%;
     transform: scale(0.2);
   }
-  100%{
+  100% {
     opacity: 1;
     width: 10px;
     height: 10px;

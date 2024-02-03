@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNT Responsive Image Slider In HTML CSS & Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slides" style="--img:url('img1.jpg')">
+                <div class="content">
+                    <h2>Image 1 Caption Here...</h2>
+                    <p>Trần Ngọc Trung</p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('img2.jpg')">
+                <div class="content">
+                    <h2>Image 2 Caption Here...</h2>
+                    <p>Trần Ngọc Trung</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('img3.jpg')">
+                <div class="content">
+                    <h2>Image 3 Caption Here...</h2>
+                    <p>Trần Ngọc Trung</p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('img4.jpg')">
+                <div class="content">
+                    <h2>Image 4 Caption Here...</h2>
+                    <p>Trần Ngọc Trung</p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('img5.jpg')">
+                <div class="content">
+                    <h2>Image 5 Caption Here...</h2>
+                    <p>Trần Ngọc Trung</p>
+                </div>
+            </div>
+            <div class="slides" style="--img:url('img6.jpg')">
+                <div class="content">
+                    <h2>Image 6 Caption Here...</h2>
+                    <p>Trần Ngọc Trung</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+    </div>
+    <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let slider = document.querySelector('.slider');
+
+        next.addEventListener('click', function () {
+            let slides = document.querySelectorAll('.slides');
+            slider.appendChild(slides[0]);
+        })
+        prev.addEventListener('click', function () {
+            let slides = document.querySelectorAll('.slides');
+            slider.prepend(slides[slides.length - 1]);
+        })
+    </script>
+</body>
+
+</html>

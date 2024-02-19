@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,20 +6,20 @@
 
 body {
     position: relative;
-}
+} */
 
-/* .box {
+.box {
     position: relative;
     height: 100px;
     background: red;
     width: 600px;
-display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
- display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center ;
-} */
+    align-items: center;
+}
 
 
 /* p {
@@ -27,11 +27,11 @@ display: flex;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-     line-height: 100px;
-  text-align: center; 
-} */
+    line-height: 100px;
+    text-align: center;
+}
 
-/* .image {
+.image {
     height: 500px;
-  background-image: url("colorful-night-in-the-mountains-digital-art_2560x1440_xtrafondos.com.jpg");
+    background-image: url("colorful-night-in-the-mountains-digital-art_2560x1440_xtrafondos.com.jpg");
 } */

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #6e18f3;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h2 {
+    font-size: 5em;
+    line-height: 1em;
+    padding: 5px 20px;
+}
+
+.container h2.text1 {
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+        5px 5px 5px rgba(0, 0, 0, 0.2),
+        15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container h2.text2 {
+    color: #6e18f3;
+    padding: 40px;
+    filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2)) drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
+}
+
+.container .box {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .box .img1 {
+    border-radius: 40px;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+        5px 5px 5px rgba(0, 0, 0, 0.2),
+        15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .box .img2 {
+    border-radius: 40px;
+    filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2)) drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
+}
